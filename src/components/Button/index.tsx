@@ -7,16 +7,10 @@ interface ButtonProps {
 }
 
 const Button = (props: ButtonProps) => {
-  const handleClick = (ev: MouseEvent<HTMLButtonElement>) => {
-    // ev.preventDefault()
-  }
-
   return props.light ? (
-    <ButtonContainerLight onClick={handleClick}>
-      {props.children}
-    </ButtonContainerLight>
+    <ButtonContainerLight href="#home">{props.children}</ButtonContainerLight>
   ) : (
-    <ButtonContainer onClick={handleClick}>{props.children}</ButtonContainer>
+    <ButtonContainer href="#home">{props.children}</ButtonContainer>
   )
 }
 

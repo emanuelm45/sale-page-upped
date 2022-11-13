@@ -4,7 +4,7 @@ import { bcgSection6 } from '../../assets'
 const SectionContainer = styled.section`
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
   min-height: 90vh;
   background: url(${bcgSection6}) center/cover no-repeat;
@@ -20,43 +20,6 @@ const SectionContainer = styled.section`
     strong {
       color: var(--clr-blue-300);
     }
-  }
-
-  ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  ul li figure {
-    position: relative;
-  }
-
-  ul li:first-child figure::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.856162447889312) 9%,
-      rgba(0, 0, 0, 0.5452380781414128) 57%,
-      rgba(0, 0, 0, 0.3043417195979955) 85%
-    );
-  }
-
-  ul li:last-child figure::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      270deg,
-      rgba(0, 0, 0, 0.856162447889312) 9%,
-      rgba(0, 0, 0, 0.5452380781414128) 57%,
-      rgba(0, 0, 0, 0.3043417195979955) 85%
-    );
   }
 `
 

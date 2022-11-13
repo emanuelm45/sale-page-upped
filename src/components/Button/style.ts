@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import { devices } from '../../styles/devices'
 
-const ButtonContainer = styled.button`
+const ButtonContainer = styled.a`
+  display: block;
   background-color: var(--clr-blue-300);
   color: var(--clr-white);
   text-transform: uppercase;
@@ -11,6 +12,7 @@ const ButtonContainer = styled.button`
   border: 0;
   font-size: var(--fs-300);
   transition: scale 0.4s;
+  text-align: center;
 
   &:hover {
     scale: 1.1;

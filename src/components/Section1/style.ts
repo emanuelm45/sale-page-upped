@@ -38,7 +38,7 @@ const SectionContainer = styled.section`
       color: var(--clr-blue-300);
     }
 
-    button {
+    a {
       align-self: center;
     }
   }
@@ -48,7 +48,7 @@ const SectionContainer = styled.section`
     background-position: 65%;
     background-attachment: fixed;
 
-    button {
+    a {
       font-size: var(--fs-400);
       width: 100%;
     }

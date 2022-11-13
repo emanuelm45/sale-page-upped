@@ -5,7 +5,7 @@ import { SectionContainer } from './style'
 const Section1 = () => {
   return (
     <>
-      <SectionContainer>
+      <SectionContainer id="home">
         <div>
           <figure>
             <img

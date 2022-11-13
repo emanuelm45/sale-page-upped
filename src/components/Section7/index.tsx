@@ -13,15 +13,15 @@ const Section7 = () => {
             aprendi a dominar tudo sobre comunicação visual.
           </p>
           <p>
-            Depois de tanto tempo estudando e se dedicando, desenvolvi um método
-            e um curso para ensinar pessoas iniciantes, designers e social media
-            que querem conquistar uma transformação de vida sendo um Designer
-            Número 1.
+            Depois de tanto tempo estudando e me dedicando, desenvolvi um método
+            e um curso para ensinar pessoas iniciantes, designers e social
+            medias que querem conquistar uma transformação de vida sendo um
+            Designer Número 1.
           </p>
           <p>
             {' '}
             Minha missão é fazer com que você sinta confiança para trabalhar
-            como designer e não seja apenas mais um no mercado, mas um
+            como designer e não seja apenas mais um no mercado, mas sim um
             profissional de destaque e de valor. Sua vida irá mudar para sempre
             depois que você dominar tudo sobre design, prospecção de clientes e
             como escalar suas artes.

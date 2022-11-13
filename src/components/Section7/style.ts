@@ -4,13 +4,8 @@ import { devices } from '../../styles/devices'
 const SectionContainer = styled.section`
   position: relative;
   min-height: 90vh;
-  background: linear-gradient(
-      317.07deg,
-      rgba(19, 154, 228, 0.2) 23.09%,
-      rgba(0, 0, 0, 0) 88.66%
-    ),
-    #000000;
-  padding: 1.5rem 3rem;
+  background: var(--bg-linear);
+  padding: 3rem 3rem;
 
   img {
     position: absolute;

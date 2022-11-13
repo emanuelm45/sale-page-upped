@@ -1,24 +1,20 @@
 import styled from 'styled-components'
+import { devices } from '../../styles/devices'
 
 const SectionContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-      317.07deg,
-      rgba(19, 154, 228, 0.2) 23.09%,
-      rgba(0, 0, 0, 0) 88.66%
-    ),
-    #000000;
-  padding: 0 min(2rem, 2vw);
+  background: var(--bg-linear);
+  padding: 2rem min(2rem, 2vw);
 
   & > div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: min(80rem);
+    width: min(80rem, 90vw);
     div {
-      width: 45%;
+      width: min(40rem, 100%);
       h2 {
         color: var(--clr-white);
         font-weight: var(--fw-bold);
@@ -42,6 +38,20 @@ const SectionContainer = styled.section`
           }
         }
       }
+    }
+  }
+
+  @media (${devices.tablet}) {
+    div {
+      flex-direction: column;
+
+      h2 {
+        margin-top: 2rem;
+        text-align: center;
+      }
+    }
+    div div ul li p {
+      font-size: var(--fs-400);
     }
   }
 `

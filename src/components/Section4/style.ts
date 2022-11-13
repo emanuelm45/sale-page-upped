@@ -7,8 +7,9 @@ const SectionContainer = styled.section`
   align-items: center;
   justify-content: center;
   position: relative;
-  min-height: 80vh;
-  background: url(${bcgSection4}) center/auto no-repeat;
+  min-height: 75vh;
+  background: url(${bcgSection4}) center/cover no-repeat;
+  padding: 2rem 0;
 
   &::after {
     content: '';
@@ -16,12 +17,7 @@ const SectionContainer = styled.section`
     height: 100%;
     position: absolute;
     opacity: 0.5;
-    background: linear-gradient(
-        9.53deg,
-        rgba(54, 150, 170, 0.4) 22.22%,
-        rgba(0, 0, 0, 0) 76.78%
-      ),
-      #111111;
+    background: var(--bg-linear);
     pointer-events: none;
   }
 
@@ -31,12 +27,12 @@ const SectionContainer = styled.section`
     align-items: center;
     position: relative;
     z-index: 1;
+    width: min(50rem, 95vw);
+    text-align: center;
 
     h2 {
       font-weight: var(--fw-bold);
       font-size: var(--fs-800);
-      width: min(35rem);
-      text-align: center;
     }
 
     h3 {
@@ -57,12 +53,11 @@ const SectionContainer = styled.section`
     }
 
     img {
-      filter: drop-shadow(1px 2px 20px rgba(255, 255, 255, 0.2));
+      filter: drop-shadow(1px 2px 20px rgba(255, 255, 255, 0.4));
     }
   }
 
   @media (${devices.tablet}) {
-    background-size: cover;
     background-attachment: fixed;
   }
 `
