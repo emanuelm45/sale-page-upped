@@ -1,53 +1,70 @@
 import styled from 'styled-components'
+import { bcgSection4 } from '../../assets'
 import { devices } from '../../styles/devices'
 
 const SectionContainer = styled.section`
-  position: relative;
-  min-height: 90vh;
-  background: var(--clr-black-400);
-  padding: 1.5rem 3rem;
-
-  img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    max-height: 90vh;
-  }
-
-  @media (${devices.laptop}) {
-    figure {
-      display: none;
-    }
-  }
-`
-
-const TextContainer = styled.div`
   display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 80vh;
+  background: url(${bcgSection4}) center/auto no-repeat;
 
-  h2 {
-    color: var(--clr-white);
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-900);
-    text-align: center;
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.5;
+    background: linear-gradient(
+        9.53deg,
+        rgba(54, 150, 170, 0.4) 22.22%,
+        rgba(0, 0, 0, 0) 76.78%
+      ),
+      #111111;
+    pointer-events: none;
   }
 
-  p {
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
-    color: var(--clr-white);
-    font-size: var(--fs-500);
     z-index: 1;
-    width: 50%;
-    font-weight: var(--fw-bold);
+
+    h2 {
+      font-weight: var(--fw-bold);
+      font-size: var(--fs-800);
+      width: min(35rem);
+      text-align: center;
+    }
+
+    h3 {
+      font-size: var(--fs-500);
+      letter-spacing: 2.5px;
+      margin: 1rem 0 2rem;
+    }
+
+    h2,
+    h3 {
+      color: var(--clr-white);
+    }
+
+    h3,
+    strong span,
+    em {
+      color: var(--clr-blue-300);
+    }
+
+    img {
+      filter: drop-shadow(1px 2px 20px rgba(255, 255, 255, 0.2));
+    }
   }
 
-  @media (${devices.laptop}) {
-    p {
-      width: 80vw;
-    }
+  @media (${devices.tablet}) {
+    background-size: cover;
+    background-attachment: fixed;
   }
 `
 
-export { SectionContainer, TextContainer }
+export { SectionContainer }

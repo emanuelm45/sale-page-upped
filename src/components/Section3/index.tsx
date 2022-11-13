@@ -1,15 +1,53 @@
+import { iconCorrect, imgDesktop } from '../../assets'
 import { SectionContainer } from './style'
-import { Carousel } from '..'
 
 const Section3 = () => {
   return (
     <>
       <SectionContainer>
-        <h2>
-          <span>Está vendo essas artes aqui?</span> Eu produzi todas em menos de{' '}
-          <span>20 minutos</span> e vou te ensinar tudo nesse evento ao vivo.
-        </h2>
-        <Carousel />
+        <div>
+          <figure>
+            <img
+              src={imgDesktop}
+              alt="Desktop Image"
+            />
+          </figure>
+          <div>
+            <h2>
+              Mas afinal, para quem é o <br /> <strong>CURSO UP DESIGN</strong>?
+            </h2>
+            <ul>
+              <li>
+                <img
+                  src={iconCorrect}
+                  alt="Icon Correct"
+                />
+                <p>Para quem está cansado de prestar serviço como freela.</p>
+              </li>
+              <li>
+                <img
+                  src={iconCorrect}
+                  alt="Icon Correct"
+                />
+                <p>
+                  Se sente insatisfeito com a desvalorização dos Designers e não
+                  quer mais artistas que sujam o mercado.
+                </p>
+              </li>
+              <li>
+                <img
+                  src={iconCorrect}
+                  alt="Icon Correct"
+                />
+                <p>
+                  E para você que quer finalmente conquistar a meta de R$10.000
+                  por mês, apenas com um método de fechar contratos de uma forma
+                  simples.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </SectionContainer>
     </>
   )
