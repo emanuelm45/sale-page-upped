@@ -8,6 +8,7 @@ const SectionContainer = styled.section`
   flex-direction: column;
   min-height: 90vh;
   background: url(${bcgSection6}) center/cover no-repeat;
+  padding: 2rem 0;
 
   h2 {
     font-size: var(--fs-700);

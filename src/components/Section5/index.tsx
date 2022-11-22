@@ -13,7 +13,7 @@ const Section5 = () => {
               alt="Icon Design"
             />
           </figure>
-          <strong>R$ 607,99</strong>
+          <strong>R$ 395,80</strong>
           <div>
             <img
               src={iconCorrect}
@@ -21,9 +21,9 @@ const Section5 = () => {
             />
             <p>Valor promocional com tudo incluso</p>
           </div>
-          <p>
-            POR 12x DE <strong>R$24,75</strong>
-            <small>OU R$297,99 À VISTA</small>
+          <p className="price">
+            por apenas 12x DE <strong>R$19,78</strong>
+            <small>ou R$197,90 à vista</small>
           </p>
           <Button light>quero minha vaga agora</Button>
         </div>

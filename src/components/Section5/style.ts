@@ -7,6 +7,7 @@ const SectionContainer = styled.section`
   justify-content: center;
   min-height: 80vh;
   background: var(--bg-linear);
+  padding: 2rem 0;
 
   & > div {
     display: flex;
@@ -16,12 +17,43 @@ const SectionContainer = styled.section`
     color: var(--clr-white);
     width: min(30rem, 90vw);
 
+    p.price {
+      margin: 0rem 0 2rem;
+      font-size: var(--fs-800);
+      text-transform: uppercase;
+
+      small {
+        display: block;
+        font-size: var(--fs-500);
+      }
+    }
+
     strong {
       font-weight: var(--fw-bold);
     }
 
     & > strong {
       font-size: var(--fs-900);
+      position: relative;
+
+      &::before,
+      &::after {
+        content: '';
+        height: 3px;
+        background-color: var(--clr-white);
+        display: block;
+        position: absolute;
+        width: 100%;
+      }
+
+      &::before {
+        top: 50%;
+        transform: rotate(15deg);
+      }
+      &::after {
+        top: 50%;
+        transform: rotate(-15deg);
+      }
     }
 
     div {
@@ -36,17 +68,7 @@ const SectionContainer = styled.section`
       p {
         font-size: var(--fs-500);
         margin: 1rem 0;
-        font-weight: var(--fw-bold);
-      }
-    }
-
-    p {
-      margin: 0rem 0 2rem;
-      font-size: var(--fs-800);
-
-      small {
-        display: block;
-        font-size: var(--fs-500);
+        text-transform: uppercase;
       }
     }
   }

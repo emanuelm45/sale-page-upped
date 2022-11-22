@@ -1,16 +1,26 @@
-import { MouseEvent } from 'react'
+import { AnchorHTMLAttributes, ButtonHTMLAttributes, MouseEvent } from 'react'
 import { ButtonContainer, ButtonContainerLight } from './style'
 
-interface ButtonProps {
+interface ButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   children: string
   light?: boolean
 }
 
 const Button = (props: ButtonProps) => {
   return props.light ? (
-    <ButtonContainerLight href="#home">{props.children}</ButtonContainerLight>
+    <ButtonContainerLight
+      href="#home"
+      {...props}
+    >
+      {props.children}
+    </ButtonContainerLight>
   ) : (
-    <ButtonContainer href="#home">{props.children}</ButtonContainer>
+    <ButtonContainer
+      href="#home"
+      {...props}
+    >
+      {props.children}
+    </ButtonContainer>
   )
 }
 

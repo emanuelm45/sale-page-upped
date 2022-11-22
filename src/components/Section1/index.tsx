@@ -1,8 +1,14 @@
+import { useRef } from 'react'
 import { logoRocket } from '../../assets'
 import { Button } from '../Button'
 import { SectionContainer } from './style'
 
 const Section1 = () => {
+  const handleClick = () => {
+    const win: Window = window
+    win.location = 'https://pay.kiwify.com.br/yEPKoyZ'
+  }
+
   return (
     <>
       <SectionContainer id="home">
@@ -21,7 +27,12 @@ const Section1 = () => {
             independente antes dos 18 anos de idade! Mesmo começando do total 0
             e sem nenhuma experiência.
           </p>
-          <Button light>quero minha vaga agora</Button>
+          <Button
+            light
+            onClick={handleClick}
+          >
+            quero minha vaga agora
+          </Button>
         </div>
       </SectionContainer>
     </>
