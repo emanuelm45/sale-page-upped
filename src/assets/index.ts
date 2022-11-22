@@ -5,6 +5,7 @@ import iconCorrect from './images/icon-correct.png'
 import iconStats from './images/icon-stats.png'
 import logo from './images/logo.png'
 import logoDesign from './images/logo-design.png'
+import bcgMobileSection1 from './images/bcg-mobile-section1.png'
 import bcgSection6 from './images/bcg-section6.png'
 import bcgSection7 from './images/bcg-section7.png'
 import bcgSection4 from './images/bcg-section4.png'
@@ -26,6 +27,7 @@ export {
   logo,
   logoDesign,
   logoRocket,
+  bcgMobileSection1,
   bcgSection6,
   bcgSection7,
   bcgSection4,

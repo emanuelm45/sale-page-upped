@@ -3,6 +3,11 @@ import { Button } from '../Button'
 import { SectionContainer } from './style'
 
 const Section5 = () => {
+  const handleClick = () => {
+    const win: Window = window
+    win.location = 'https://pay.kiwify.com.br/yEPKoyZ'
+  }
+
   return (
     <>
       <SectionContainer>
@@ -25,7 +30,12 @@ const Section5 = () => {
             por apenas 12x DE <strong>R$19,78</strong>
             <small>ou R$197,90 à vista</small>
           </p>
-          <Button light>quero minha vaga agora</Button>
+          <Button
+            light
+            onClick={handleClick}
+          >
+            quero minha vaga agora
+          </Button>
         </div>
       </SectionContainer>
     </>

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { banner } from '../../assets'
+import { banner, bcgMobileSection1 } from '../../assets'
 import { devices } from '../../styles/devices'
 
 const SectionContainer = styled.section`
@@ -17,6 +17,7 @@ const SectionContainer = styled.section`
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+
     h2 {
       font-weight: var(--fw-bold);
       text-transform: uppercase;
@@ -37,16 +38,12 @@ const SectionContainer = styled.section`
     strong {
       color: var(--clr-blue-300);
     }
-
-    a {
-      align-self: center;
-    }
   }
 
   @media (${devices.tablet}) {
-    align-items: center;
-    background-position: 65%;
-    background-attachment: fixed;
+    background: url(${bcgMobileSection1}) top right / cover no-repeat;
+    padding-top: 12rem;
+    margin-top: 0;
 
     a {
       font-size: var(--fs-400);

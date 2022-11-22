@@ -10,6 +10,8 @@ const CarouselContainer = styled.div`
   }
 
   .item {
+    display: flex;
+    justify-content: center;
     height: 20rem;
     aspect-ratio: 1/1;
   }
