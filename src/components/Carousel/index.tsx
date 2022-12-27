@@ -6,8 +6,8 @@ import {
   imgCarousel4,
   imgCarousel5
 } from '../../assets'
-import { motion } from 'framer-motion'
-import { useEffect, useRef, useState } from 'react'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import { Carousel } from 'react-responsive-carousel'
 
 const images = [
   imgCarousel1,
@@ -18,27 +18,18 @@ const images = [
 ]
 
 const CCarousel = () => {
-  const carousel = useRef()
-  const [width, setWidth] = useState(0)
-
-  useEffect(() => {
-    //@ts-ignore
-    setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
-  }, [])
-
   return (
     <>
-      {/* @ts-ignore */}
-      <CarouselContainer ref={carousel}>
-        <motion.div
-          className="inner"
-          whileTap={{ cursor: 'grab' }}
-          drag="x"
-          dragConstraints={{ right: 0, left: -width }}
+      <CarouselContainer>
+        <Carousel
+          emulateTouch
+          swipeable
+          dynamicHeight
+          showThumbs={false}
         >
           {images.map((image, idx) => {
             return (
-              <motion.div
+              <div
                 className="item"
                 key={idx}
               >
@@ -46,10 +37,10 @@ const CCarousel = () => {
                   src={image}
                   alt="Carousel Image"
                 />
-              </motion.div>
+              </div>
             )
           })}
-        </motion.div>
+        </Carousel>
       </CarouselContainer>
     </>
   )
